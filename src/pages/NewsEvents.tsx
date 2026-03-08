@@ -19,6 +19,15 @@ const NewsEvents = () => {
 
       <div className='grid w-full grid-cols-1 gap-6 pt-8 md:grid-cols-2'>
         <div>
+
+          <p>
+            We run various events like... 
+          </p>
+
+          <p>
+            We collaborate with RAeS...
+          </p>
+
           <p>
             INSERT EMBEDDED GOOGLE CALENDAR 
           </p>

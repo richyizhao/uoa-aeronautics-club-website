@@ -12,7 +12,7 @@ const HomePage = () => {
   return (
     <section className='flex flex-col items-center justify-center'>
       {/* Team photo & motto quote */}
-      <h1 className='pb-8 text-center text-7xl font-semibold'>Welcome to UAC!</h1>
+      <h1 className='pb-8 text-center text-7xl font-semibold'>Welcome to UAC</h1>
 
       <div className='group relative'>
         {/* Gray overlay */}
@@ -21,13 +21,13 @@ const HomePage = () => {
 
         <p className='absolute inset-0 flex items-center justify-center'>
           <span className='max-w-3xl px-6 text-center text-5xl'>
-            Innovation in Every Altitude, Excellence in Every Endeavor
+            ROTATING IMAGES EVERY 5 ish SECONDS?. ALSO UNDER THIS IMAGE HAVE A BANNER FROM LEFT TO RIGHT THAT SAYS: DESIGN. BUILD. FLY.
           </span>
         </p>
       </div>
 
       {/* Brief club & application info */}
-      <h2 className='self-start pt-16 text-5xl font-semibold'>Club Info</h2>
+      <h2 className='self-start pt-16 text-5xl font-semibold'>Kia ora!</h2>
 
       <div className='grid w-full grid-cols-1 gap-6 pt-8 md:grid-cols-2'>
         <div>
@@ -49,6 +49,10 @@ const HomePage = () => {
             students alike. Membership is open to all enrolled University of Auckland students, with
             limited opportunities for non-UoA participants.
           </p>
+          <br />
+          <p>
+            Read our club handbook here. (ADD LINK)
+          </p>
         </div>
 
         {/* Toggle activate/deactivate apply button depending on availability */}
@@ -56,7 +60,7 @@ const HomePage = () => {
           {applicationIsOpen ? (
             <>
               <p className='max-w-xs text-center text-2xl'>
-                Applications are currently open for the year {new Date().getFullYear() + 1}.
+                Applications are currently open for {new Date().getFullYear()}.
               </p>
               <a
                 href={applicationLink}
@@ -70,7 +74,7 @@ const HomePage = () => {
           ) : (
             <>
               <p className='max-w-xs text-center text-2xl'>
-                Applications are currently closed for the year {new Date().getFullYear() + 1}.
+                Applications are currently closed for {new Date().getFullYear()}.
               </p>
               <button
                 disabled
@@ -84,7 +88,7 @@ const HomePage = () => {
       </div>
 
       {/* Image overlay cards for further page navigation */}
-      <h2 className='self-start pt-16 text-5xl font-semibold'>Learn more</h2>
+      <h2 className='self-start pt-16 text-5xl font-semibold'>Learn More. ALSO ADD FOOTER W/ EMAIL and LINKTREE and SOCIALS </h2>
 
       <div className='grid w-full grid-cols-2 gap-6 pt-8'>
         {imageOverlayCardData.map((card) => (

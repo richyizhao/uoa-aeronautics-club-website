@@ -8,7 +8,7 @@ const OurProjects = () => {
       <div className='grid w-full grid-cols-1 gap-6 pt-8 md:grid-cols-2'>
         <div>
           <p>
-            Andre Williams - Co-President
+            DESCRIPTION, PICTURES
           </p>
         </div>
       </div>
@@ -18,7 +18,7 @@ const OurProjects = () => {
       <div className='grid w-full grid-cols-1 gap-6 pt-8 md:grid-cols-2'>
         <div>
           <p>
-            Andre Williams - Co-President
+            DESCRIPTION, PICTURES
           </p>
         </div>
       </div>
@@ -28,7 +28,7 @@ const OurProjects = () => {
       <div className='grid w-full grid-cols-1 gap-6 pt-8 md:grid-cols-2'>
         <div>
           <p>
-            Andre Williams - Co-President
+            DESCRIPTION, PICTURES
           </p>
         </div>
       </div>
@@ -38,7 +38,7 @@ const OurProjects = () => {
       <div className='grid w-full grid-cols-1 gap-6 pt-8 md:grid-cols-2'>
         <div>
           <p>
-            Andre Williams - Co-President
+            DESCRIPTION, PICTURES
           </p>
         </div>
       </div>

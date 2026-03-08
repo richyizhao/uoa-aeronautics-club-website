@@ -8,7 +8,7 @@ const OurSponsors = () => {
       <div className='grid w-full grid-cols-1 gap-6 pt-8 md:grid-cols-2'>
         <div>
           <p>
-            We are lucky to be supported by a number of organisations.
+            We are lucky to be supported by a number of organisations. ADD LOGO PHOTOS WITH LINKS TO THEIR WEBSITE
           </p>
           <p>
             Dassault Systemes
@@ -34,7 +34,21 @@ const OurSponsors = () => {
       <div className='grid w-full grid-cols-1 gap-6 pt-8 md:grid-cols-2'>
         <div>
           <p>
-            If you or your organisation would like to support our club, please email us.
+            If you or your organisation would like to support our club, please email us. 
+          </p>
+          <p>
+            Feel free to read our 2025 Sponsorship Prospectus here (ADD A LINK).
+          </p>
+          
+        </div>
+      </div>
+
+      <h2 className='self-start pt-16 text-5xl font-semibold'>Merchandise</h2>
+
+      <div className='grid w-full grid-cols-1 gap-6 pt-8 md:grid-cols-2'>
+        <div>
+          <p>
+            If you or your organisation would like to support our club by purchasing merchandise, please email us.
           </p>
           
         </div>
