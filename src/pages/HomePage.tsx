@@ -12,7 +12,7 @@ const HomePage = () => {
   return (
     <section className='flex flex-col items-center justify-center'>
       {/* Team photo & motto quote */}
-      <h1 className='pb-8 text-center text-7xl font-semibold'>Our Motto</h1>
+      <h1 className='pb-8 text-center text-7xl font-semibold'>Welcome to UAC!</h1>
 
       <div className='group relative'>
         {/* Gray overlay */}
@@ -21,7 +21,7 @@ const HomePage = () => {
 
         <p className='absolute inset-0 flex items-center justify-center'>
           <span className='max-w-3xl px-6 text-center text-5xl'>
-            "Innovation in Every Altitude, Excellence in Every Endeavor"
+            Innovation in Every Altitude, Excellence in Every Endeavor
           </span>
         </p>
       </div>
