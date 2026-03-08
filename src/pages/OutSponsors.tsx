@@ -8,7 +8,7 @@ const OurSponsors = () => {
       <div className='grid w-full grid-cols-1 gap-6 pt-8 md:grid-cols-2'>
         <div>
           <p>
-            We are lucky to be supported by a number of organisations. ADD LOGO PHOTOS WITH LINKS TO THEIR WEBSITE
+            We are lucky to be supported by a number of organisations. This wouldnt be possible without them. ADD LOGO PHOTOS WITH LINKS TO THEIR WEBSITE WHEN YOU HOVER.
           </p>
           <p>
             Dassault Systemes
