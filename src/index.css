@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings:
+    'liga' 1,
+    'calt' 1;
+
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: white;
+
+  background-color: oklch(21% 0.034 264.665);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: InterVariable, sans-serif;
+  }
+}
+
+html {
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+  scrollbar-color: white oklch(21% 0.034 264.665);
+}
