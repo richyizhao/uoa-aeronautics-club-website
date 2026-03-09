@@ -1,14 +1,13 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
-
 import { hamburgerMenuData } from '../../assets/data'
 
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false)
   const toggleMenu = () => {
     if (!isOpen) {
-      // Instantly scroll to top before opening
+      // instantly scroll to top before opening
       window.scrollTo(0, 0)
       setIsOpen(true)
     } else {
@@ -17,7 +16,7 @@ const HamburgerMenu = () => {
   }
 
   useEffect(() => {
-    // Hide scrollbar when menu is open
+    // hide scrollbar when menu is open
     document.body.style.overflow = isOpen ? 'hidden' : 'auto'
 
     return () => {
@@ -49,7 +48,7 @@ const HamburgerMenu = () => {
         />
       </div>
 
-      {/* Navigation Menu Overlay */}
+      {/* Navigation Menu */}
       <AnimatePresence>
         {isOpen && (
           <motion.div

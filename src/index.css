@@ -25,7 +25,7 @@
 }
 
 html {
-  scrollbar-width: thin;
+  scrollbar-width: bold;
   scroll-behavior: smooth;
   scrollbar-color: white oklch(21% 0.034 264.665);
 }
