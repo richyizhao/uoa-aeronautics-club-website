@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Icon } from '@iconify/react'
 import { carouselSlides } from '../../assets/data'
 
@@ -13,14 +13,23 @@ const Carousel = () => {
     setCurrent((prev) => (prev - 1 + carouselSlides.length) % carouselSlides.length)
   }
 
+  // auto-scroll every 5 sec
+  useEffect(() => {
+    const interval = setInterval(() => {
+      next()
+    }, 5000)
+
+    return () => clearInterval(interval) // unmount cleanup
+  }, [])
+
   return (
     <div className='group relative h-107.5 w-full overflow-hidden rounded-xl'>
       {/* Slides */}
-      {carouselSlides.map((carouselSlides, index) => (
+      {carouselSlides.map((slide, index) => (
         <img
-          key={carouselSlides.id}
-          src={carouselSlides.image}
-          alt={carouselSlides.alt}
+          key={slide.id}
+          src={slide.image}
+          alt={slide.alt}
           className={`absolute top-0 left-0 h-full w-full object-cover transition-opacity duration-500 ${
             current === index ? 'opacity-100' : 'opacity-0'
           }`}

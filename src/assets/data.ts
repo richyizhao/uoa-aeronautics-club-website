@@ -1,12 +1,19 @@
-// Foooter (component > layout)
-import uacLogo from './media/uac-logo.png'
-// Image Overlay Card (component > ui)
-import aboutUs from '../assets/media/about-us.jpg'
-import newsEvents from '../assets/media/news-events.jpg'
-import ourProjects from '../assets/media/our-projects.jpg'
-import ourSponsors from '../assets/media/our-sponsors.jpg'
-// Profile Grid (component > ui)
+// PLACEHOLDER
 import placeholder from '../assets/media/placeholder.jpg'
+
+// Foooter (component > layout > footer)
+import uacLogo from './media/uac-logo.png'
+// Image Overlay Text (pages > home page)
+import aboutUs from './media/about-us.jpg'
+import newsEvents from './media/news-events.jpg'
+import ourProjects from './media/our-projects.jpg'
+import ourSponsors from './media/our-sponsors.jpg'
+// Image Overlay Text (pages > our sponsors)
+import dassaultSystemes from './media/dassault-systemes.png'
+import avicCabinSystems from './media/avic-cabin-systems.png'
+import modelFlyingNZ from './media/model-flying-nz.png'
+import aerospaceNZ from './media/aerospace-nz.png'
+import royalAeronauticalSociety from './media/royal-aeronautical-society.png'
 
 /*
 Frequently modified data is prioritized to be stored here.
@@ -47,7 +54,7 @@ export const hamburgerMenuData = [
   { label: 'Contact & Sign Up', path: '/contact-sign-up' },
 ]
 
-// Carousel (components > ui > carousel) <PLACEHOLDERS>
+// Carousel (pages > home page) <PLACEHOLDERS>
 export const carouselSlides = [
   {
     id: 1,
@@ -61,10 +68,10 @@ export const carouselSlides = [
   },
 ]
 
-// Image Overlay Card (pages > home page)
+// Image Overlay Card (pages > home page) (pages > our sponsors)
 export const imageOverlayTextData = [
   {
-    id: 1,
+    id: 1, // (pages > home page)
     src: aboutUs,
     title: 'About Us',
     description: 'Learn more about UAC.',
@@ -91,9 +98,49 @@ export const imageOverlayTextData = [
     description: 'Discover the organisations that generously support our club.',
     link: '/our-sponsors',
   },
+  {
+    id: 5, // (pages > our sponsors)
+    src: dassaultSystemes,
+    title: 'Dassault Systèmes',
+    description: 'Learn more about Dassault Systèmes.',
+    link: 'https://www.3ds.com/',
+    category: 'company',
+  },
+  {
+    id: 6,
+    src: avicCabinSystems,
+    title: 'AVIC Cabin Systems',
+    description: 'Learn more about AVIC Cabin Systems.',
+    link: 'https://www.aviccabinsystems.com/',
+    category: 'company',
+  },
+  {
+    id: 7,
+    src: modelFlyingNZ,
+    title: 'Model Flying New Zealand.',
+    description: 'Learn more about Model Flying New Zealand.',
+    link: 'https://www.mfnz.org/',
+    category: 'company',
+  },
+  {
+    id: 8,
+    src: aerospaceNZ,
+    title: 'Aerospace New Zealand',
+    description: 'Learn more about Aerospace New Zealand.',
+    link: 'https://www.aerospace.org.nz/',
+    category: 'company',
+  },
+  {
+    id: 9,
+    src: royalAeronauticalSociety,
+    title: 'Royal Aeronautical Society',
+    description: 'Learn more about the Royal Aeronautical Society.',
+    link: 'https://www.aerosociety.com/',
+    category: 'company',
+  },
 ]
 
-// Profile Grid (components > ui > profile grid) <PLACEHOLDERS>
+// Profile Grid (pages > about us) <PLACEHOLDERS>
 export const profileGridData = [
   { name: 'Andre Williams', position: 'Co-President', image: placeholder },
   { name: 'William Li', position: 'Co-President', image: placeholder },
@@ -108,7 +155,7 @@ export const profileGridData = [
   { name: 'A/Prof Mike Kingan', position: 'Faculty Advisor', image: placeholder },
 ]
 
-// Accordion (components > ui > accordion) <PLACEHOLDERS>
+// Accordion (pages > about us) <PLACEHOLDERS>
 export const accordionData = [
   {
     id: 1,

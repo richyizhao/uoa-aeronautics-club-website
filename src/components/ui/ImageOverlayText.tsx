@@ -6,12 +6,38 @@ interface ImageOverlayTextProps {
   title: string
   description: string
   link: string
+  category?: string
 }
 
-const ImageOverlayText = ({ src, title, description, link }: ImageOverlayTextProps) => {
-  return (
+const ImageOverlayText = ({ src, title, description, link, category }: ImageOverlayTextProps) => {
+  const isCompanyLogo = category === 'company'
+
+  return isCompanyLogo ? (
     <div className='group relative h-60 w-full overflow-hidden rounded-2xl'>
-      {/* light black overlay (default state)*/}
+      {/* light black overlay (default state) */}
+      <div className='absolute inset-0 rounded-2xl bg-black/10 transition-opacity duration-300' />
+      <img src={src} alt={title} className='h-full w-full object-contain object-center p-6' />
+
+      {/* mid black overlay (hover state) */}
+      <div className='absolute inset-0 bg-black/30 opacity-0 transition-opacity duration-300 group-hover:opacity-100' />
+      <div className='absolute inset-0 flex flex-col items-center justify-center gap-4 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100'>
+        <a href={link} target='_blank' rel='noopener noreferrer' className='text-center'>
+          {description}
+        </a>
+
+        <a
+          href={link}
+          target='_blank'
+          rel='noopener noreferrer'
+          className='rounded-4xl bg-white px-4 py-2 font-semibold text-blue-600 transition duration-300 hover:bg-gray-300'
+        >
+          Learn More
+        </a>
+      </div>
+    </div>
+  ) : (
+    <div className='group relative h-60 w-full overflow-hidden rounded-2xl'>
+      {/* light black overlay (default state) */}
       <div className='absolute inset-0 rounded-2xl bg-black/10 transition-opacity duration-300' />
       <img src={src} alt={title} className='h-full w-full object-cover object-center' />
       <Link

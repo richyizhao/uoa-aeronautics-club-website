@@ -12,11 +12,11 @@ const Accordion = ({ year, profiles, expanded = false }: AccordionProps) => {
   const [open, setOpen] = useState(expanded)
 
   return (
-    <div className='w-full overflow-hidden rounded-lg border border-gray-700'>
+    <div className='w-full overflow-hidden rounded-lg border-4 border-gray-800'>
       {/* Year & Icon Header */}
       <button
         onClick={() => setOpen(!open)}
-        className='flex w-full items-center justify-between bg-gray-900 px-6 py-4 text-left transition hover:cursor-pointer hover:bg-gray-800'
+        className='flex w-full items-center justify-between bg-gray-800 px-6 py-4 text-left transition hover:cursor-pointer'
       >
         <span className='text-2xl font-semibold'>{year}</span>
 
@@ -27,7 +27,7 @@ const Accordion = ({ year, profiles, expanded = false }: AccordionProps) => {
 
       {/* Expandable Content */}
       {open && (
-        <div className='border-t border-gray-700 p-6'>
+        <div className='border-t-4 border-gray-800 p-6'>
           <ProfileGrid profiles={profiles} />
         </div>
       )}

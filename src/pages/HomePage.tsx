@@ -84,7 +84,7 @@ const HomePage = () => {
       <h2 className='mt-12 mb-6 text-5xl font-semibold'>Learn More</h2>
 
       <div className='grid w-full grid-cols-2 gap-6'>
-        {imageOverlayTextData.map((card) => (
+        {imageOverlayTextData.slice(0, 4).map((card) => (
           <ImageOverlayText key={card.id} {...card} />
         ))}
       </div>

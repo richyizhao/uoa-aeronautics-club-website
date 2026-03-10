@@ -6,7 +6,7 @@ import HomePage from './pages/HomePage'
 import AboutUs from './pages/AboutUs'
 import NewsEvents from './pages/NewsEvents'
 import OurProjects from './pages/OurProjects'
-import OurSponsors from './pages/OutSponsors'
+import OurSponsors from './pages/OurSponsors'
 import ContactSignUp from './pages/ContactSignUp'
 
 const App = () => {
