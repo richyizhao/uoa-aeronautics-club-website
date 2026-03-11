@@ -7,7 +7,7 @@ const OurSponsors = () => {
       <h1 className='my-8 text-center text-7xl font-semibold'>Our Sponsors</h1>
 
       {/* Sponsor Message */}
-      <h2 className='mt-12 mb-6 text-5xl font-semibold'>With Gratitude to Our Sponsors</h2>
+      <h2 className='mb-4 text-5xl font-semibold'>With Gratitude to Our Sponsors</h2>
 
       <p className='mb-6'>
         This initiative is made possible through the support of our esteemed sponsors.

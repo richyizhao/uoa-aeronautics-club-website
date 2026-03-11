@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { frequentlyModifiedData, imageOverlayTextData } from '../assets/data'
 
 import Carousel from '../components/ui/Carousel'
@@ -55,14 +56,12 @@ const HomePage = () => {
               <p className='max-w-xs text-center text-2xl'>
                 Applications are currently open for {new Date().getFullYear()}.
               </p>
-              <a
-                href={applicationLink}
-                target='_blank'
-                rel='noopener noreferrer'
+              <Link
+                to='/contact-sign-up'
                 className='rounded-4xl bg-white px-8 py-4 font-semibold text-blue-600 no-underline duration-300 hover:bg-gray-300'
               >
                 Start Your Aeronautics Journey
-              </a>
+              </Link>
             </>
           ) : (
             <>

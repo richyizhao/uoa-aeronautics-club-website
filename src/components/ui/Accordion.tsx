@@ -27,7 +27,7 @@ const Accordion = ({ year, profiles, expanded = false }: AccordionProps) => {
 
       {/* Expandable Content */}
       {open && (
-        <div className='border-t-4 border-gray-800 p-6'>
+        <div>
           <ProfileGrid profiles={profiles} />
         </div>
       )}

@@ -14,7 +14,7 @@ const ProfileGrid = ({ profiles }: ProfileGridProps) => {
       {profiles.map((profile, index) => (
         <div
           key={index}
-          className='flex w-1/2 flex-col items-center p-4 text-center md:w-1/3 lg:w-1/4'
+          className='flex w-1/2 flex-col items-center p-6 text-center md:w-1/3 lg:w-1/4'
         >
           <img
             src={profile.image}

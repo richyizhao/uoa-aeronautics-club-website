@@ -6,7 +6,7 @@ const OurProjects = () => {
       <h1 className='my-8 text-center text-7xl font-semibold'>Our Projects</h1>
 
       {/* Human-Powered Aircraft */}
-      <h2 className='mt-12 mb-6 text-center text-5xl font-semibold'>Human-Powered Aircraft</h2>
+      <h2 className='mb-6 text-5xl font-semibold'>Human-Powered Aircraft</h2>
 
       <div className='grid w-full grid-cols-1 gap-6 md:grid-cols-2'>
         {/* PLACEHOLDERS */}
@@ -36,7 +36,7 @@ const OurProjects = () => {
       </div>
 
       {/* Remote-Control Aircraft */}
-      <h2 className='mt-12 mb-6 text-center text-5xl font-semibold'>Remote-Control Aircraft</h2>
+      <h2 className='mt-12 mb-6 text-5xl font-semibold'>Remote-Control Aircraft</h2>
 
       <div className='grid w-full grid-cols-1 gap-6 md:grid-cols-2'>
         {/* PLACEHOLDERS */}
@@ -66,7 +66,7 @@ const OurProjects = () => {
       </div>
 
       {/* Community Outreach */}
-      <h2 className='mt-12 mb-6 text-center text-5xl font-semibold'>Community Outreach</h2>
+      <h2 className='mt-12 mb-6 text-5xl font-semibold'>Community Outreach</h2>
 
       <div className='grid w-full grid-cols-1 gap-6 md:grid-cols-2'>
         {/* PLACEHOLDERS */}
@@ -96,9 +96,7 @@ const OurProjects = () => {
       </div>
 
       {/* AIAA Design Build Fly Competition */}
-      <h2 className='mt-12 mb-6 text-center text-5xl font-semibold'>
-        AIAA Design Build Fly Competition
-      </h2>
+      <h2 className='mt-12 mb-6 text-5xl font-semibold'>AIAA Design Build Fly Competition</h2>
 
       <div className='grid w-full grid-cols-1 gap-6 md:grid-cols-2'>
         {/* PLACEHOLDERS */}

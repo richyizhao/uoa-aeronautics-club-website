@@ -6,9 +6,9 @@ import Accordion from '../components/ui/Accordion'
 const AboutUs = () => {
   return (
     <section>
-      {/* Club Cohort Picture */}
       <h1 className='my-8 text-center text-7xl font-semibold'>About Us</h1>
 
+      {/* Club Cohort Picture */}
       <div className='group relative'>
         {/* light black overlay */}
         <div className='absolute inset-0 rounded-2xl bg-black/10 transition-opacity duration-300' />
@@ -22,7 +22,7 @@ const AboutUs = () => {
       </div>
 
       {/* Who Are We */}
-      <h2 className='mt-12 mb-6 text-center text-5xl font-semibold'>Who Are We?</h2>
+      <h2 className='mt-12 mb-6 text-5xl font-semibold'>Who Are We?</h2>
 
       <div className='grid w-full grid-cols-1 gap-6 md:grid-cols-2'>
         {/* PLACEHOLDERS */}
@@ -52,7 +52,7 @@ const AboutUs = () => {
       </div>
 
       {/* History */}
-      <h2 className='mt-12 mb-6 text-center text-5xl font-semibold'>Our History</h2>
+      <h2 className='mt-12 mb-6 text-5xl font-semibold'>Our History</h2>
 
       <div className='grid w-full grid-cols-1 gap-6 md:grid-cols-2'>
         {/* PLACEHOLDERS */}
