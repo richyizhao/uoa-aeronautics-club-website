@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sora: Sora, sans-serif;
+  --font-inter: Inter, sans-serif;
+  --color-brand-yellow: oklch(0.8331 0.1573 89.25);
+  --color-brand-blue: oklch(0.3121 0.0722 251.82);
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 500ms ease-out both;
+}
