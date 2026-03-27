@@ -43,7 +43,7 @@ export const Projects: React.FC = () => {
       <section className='bg-white px-6 py-20'>
         <div className='container mx-auto max-w-5xl'>
           <div className='mb-12 text-center'>
-            <span className='mb-4 block text-sm font-semibold tracking-wider text-sky-500 uppercase md:text-base'>
+            <span className='text-subheader mb-4 block text-sm font-semibold tracking-wider uppercase md:text-base'>
               Projects
             </span>
             <h1 className='font-sora mb-6 text-4xl font-bold text-slate-900 md:text-5xl'>
@@ -74,7 +74,7 @@ export const Projects: React.FC = () => {
                       />
                     </div>
                     <div className='flex flex-col gap-2'>
-                      <p className='text-sm tracking-wider text-sky-500 uppercase'>
+                      <p className='text-subheader text-sm tracking-wider uppercase'>
                         {project.subtitle}
                       </p>
                       <h2 className='font-sora text-2xl font-semibold text-slate-900'>

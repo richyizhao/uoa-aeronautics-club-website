@@ -3,8 +3,9 @@
 @theme {
   --font-sora: Sora, sans-serif;
   --font-inter: Inter, sans-serif;
-  --color-brand-yellow: oklch(0.8331 0.1573 89.25);
-  --color-brand-blue: oklch(0.3121 0.0722 251.82);
+  --color-brand-yellow: #f1c232;
+  --color-brand-blue: #0c2742;
+  --color-subheader: #00a6f4;
 }
 
 @keyframes fade-in {

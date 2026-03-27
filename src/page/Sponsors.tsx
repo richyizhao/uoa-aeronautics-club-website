@@ -12,7 +12,7 @@ export const Sponsors: React.FC = () => {
       <section className='bg-white px-6 py-20'>
         <div className='container mx-auto max-w-5xl'>
           <div className='mb-12 text-center'>
-            <span className='mb-4 block text-sm font-semibold tracking-wider text-sky-500 uppercase md:text-base'>
+            <span className='text-subheader mb-4 block text-sm font-semibold tracking-wider uppercase md:text-base'>
               Sponsors
             </span>
             <h1 className='font-sora mb-6 text-4xl font-bold text-slate-900 md:text-5xl'>
@@ -53,7 +53,7 @@ export const Sponsors: React.FC = () => {
           <div>
             <div className='mb-6 flex flex-col justify-between gap-4 md:flex-row md:items-end'>
               <div>
-                <span className='mb-3 block text-sm font-semibold tracking-wider text-sky-500 uppercase'>
+                <span className='text-subheader mb-3 block text-sm font-semibold tracking-wider uppercase'>
                   Partnerships
                 </span>
                 <h2 className='font-sora text-2xl font-semibold text-slate-900'>

@@ -10,7 +10,7 @@ export const Header: React.FC = () => {
   const { brand } = header
 
   return (
-    <header className='sticky top-0 z-50 bg-gray-900 py-4 shadow-sm backdrop-blur-md transition-all duration-300'>
+    <header className='bg-brand-blue sticky top-0 z-50 py-4 shadow-sm backdrop-blur-md transition-all duration-300'>
       <div className='container mx-auto flex h-8 max-w-7xl items-center justify-between px-6'>
         <Link
           to={brand.path}

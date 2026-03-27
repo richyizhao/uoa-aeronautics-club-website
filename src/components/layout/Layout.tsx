@@ -8,7 +8,7 @@ interface LayoutProps {
 
 export const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div className='font-inter flex min-h-dvh flex-col bg-gray-900 font-light text-slate-800'>
+    <div className='font-inter bg-brand-blue flex min-h-dvh flex-col font-light text-slate-800'>
       <Header />
       <main className='grow'>{children}</main>
       <Footer />
