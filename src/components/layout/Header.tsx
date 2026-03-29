@@ -15,7 +15,9 @@ export const Header: React.FC = () => {
           <div className='h-full w-30'>
             <img src={brand.logo} alt='UAC Logo' />
           </div>
-          <span className='font-sora text-xl font-bold text-white'>{brand.label}</span>
+          <span className='font-sora text-xl font-bold text-white max-md:hidden'>
+            {brand.label}
+          </span>
         </a>
 
         <nav className='hidden items-center gap-8 text-sm font-medium text-slate-100 lg:flex'>
