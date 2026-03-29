@@ -24,10 +24,6 @@ const getGridColumnCount = (width: number) => {
 }
 
 export const Gallery: React.FC<GalleryProps> = ({ images, className = '', layout = 'masonry' }) => {
-  if (images.length === 0) {
-    return null
-  }
-
   const containerRef = React.useRef<HTMLDivElement | null>(null)
   const [gridColumnCount, setGridColumnCount] = React.useState(() =>
     typeof window === 'undefined' ? 1 : getGridColumnCount(window.innerWidth),
@@ -103,6 +99,10 @@ export const Gallery: React.FC<GalleryProps> = ({ images, className = '', layout
 
   const imageClassName =
     layout === 'grid' ? 'block h-full w-full object-cover' : 'h-full w-full object-cover'
+
+  if (images.length === 0) {
+    return null
+  }
 
   return (
     <div ref={containerRef} className={cn(containerClassName)}>

@@ -75,7 +75,7 @@ export const Accordion: React.FC<AccordionProps> = ({
         id={buttonId}
         type='button'
         className={cn(
-          'flex w-full items-center justify-between gap-4 px-5 py-4 text-left focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:outline-none focus-visible:ring-inset',
+          'flex w-full cursor-pointer items-center justify-between gap-4 px-5 py-4 text-left focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:outline-none focus-visible:ring-inset',
           headerClassName,
         )}
         onClick={() => setOpen(!isOpen)}

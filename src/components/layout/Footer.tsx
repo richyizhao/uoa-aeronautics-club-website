@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { Button } from '../ui/Button'
 import { layoutData } from '../../data/data'
-import uacLogo from '../../assets/media/uac-logo.png'
 
 export const Footer: React.FC = () => {
   const { header, footer } = layoutData
@@ -17,7 +16,7 @@ export const Footer: React.FC = () => {
             className='mb-4 flex items-center justify-center gap-6 hover:opacity-80 max-xl:flex-col md:justify-start'
           >
             <div className='h-full w-30'>
-              <img src={uacLogo} alt='UAC Logo' />
+              <img src={brand.logo} alt='UAC Logo' />
             </div>
             <span className='font-sora text-xl font-bold text-white'>{brand.label}</span>
           </a>
@@ -70,7 +69,7 @@ export const Footer: React.FC = () => {
           </div>
         ))}
       </div>
-      <div className='mt-12 pt-8 text-center text-xs font-light opacity-60'>
+      <div className='mt-12 text-center text-xs font-light opacity-60'>
         <div className='max-w-8xl mx-auto mb-8 h-px w-full bg-linear-to-r from-transparent via-[#99a1af]/70 to-transparent' />
         &copy;{new Date().getFullYear()} {brand.label}. All rights reserved.
       </div>

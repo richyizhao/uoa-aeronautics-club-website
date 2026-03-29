@@ -30,22 +30,24 @@ export const Collage: React.FC<CollageProps> = ({
   label = 'Image collage',
   maxTiles = 8,
 }) => {
+  const visibleImages = React.useMemo(
+    () =>
+      images.length === 0
+        ? []
+        : Array.from({ length: maxTiles }, (_, index) => {
+            const sourceImage = images[index % images.length]
+
+            return {
+              src: sourceImage?.src ?? '',
+              alt: sourceImage?.alt ?? 'Collage image',
+            }
+          }),
+    [images, maxTiles],
+  )
+
   if (images.length === 0) {
     return null
   }
-
-  const visibleImages = React.useMemo(
-    () =>
-      Array.from({ length: maxTiles }, (_, index) => {
-        const sourceImage = images[index % images.length]
-
-        return {
-          src: sourceImage?.src ?? '',
-          alt: sourceImage?.alt ?? 'Collage image',
-        }
-      }),
-    [images, maxTiles],
-  )
 
   return (
     <section className={cn('w-full', className)} aria-label={label}>

@@ -22,10 +22,6 @@ export const HamburgerMenu = ({ items, className }: HamburgerMenuProps) => {
   const toggleButtonRef = useRef<HTMLButtonElement | null>(null)
   const overlayRef = useRef<HTMLDivElement | null>(null)
 
-  if (items.length === 0) {
-    return null
-  }
-
   useEffect(() => {
     if (!isOpen) {
       return
@@ -35,6 +31,7 @@ export const HamburgerMenu = ({ items, className }: HamburgerMenuProps) => {
 
     const previousBodyOverflow = document.body.style.overflow
     const previousHtmlOverflow = document.documentElement.style.overflow
+    const toggleButton = toggleButtonRef.current
     document.body.style.overflow = 'hidden'
     document.documentElement.style.overflow = 'hidden'
 
@@ -75,11 +72,15 @@ export const HamburgerMenu = ({ items, className }: HamburgerMenuProps) => {
       window.removeEventListener('keydown', handleKeyDown)
       document.body.style.overflow = previousBodyOverflow
       document.documentElement.style.overflow = previousHtmlOverflow
-      toggleButtonRef.current?.focus()
+      toggleButton?.focus()
     }
   }, [isOpen])
 
   useEffect(() => {
+    if (typeof window === 'undefined') {
+      return
+    }
+
     const desktopMediaQuery = window.matchMedia('(min-width: 1024px)')
     const handleDesktopChange = (event: MediaQueryListEvent | MediaQueryList) => {
       if (event.matches) {
@@ -91,6 +92,10 @@ export const HamburgerMenu = ({ items, className }: HamburgerMenuProps) => {
     desktopMediaQuery.addEventListener('change', handleDesktopChange)
     return () => desktopMediaQuery.removeEventListener('change', handleDesktopChange)
   }, [])
+
+  if (items.length === 0) {
+    return null
+  }
 
   return (
     <div className={cn('relative flex items-center', className)}>

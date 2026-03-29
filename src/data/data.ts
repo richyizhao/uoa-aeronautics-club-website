@@ -1,4 +1,7 @@
-﻿import placeholder from '../assets/media/placeholder.png'
+﻿/* PLACEHOLDER */
+import placeholder from '../assets/media/placeholder.png'
+/* Header */
+import uacLogo from '../assets/media/uac-logo.png'
 /* Home Page */
 import humanPoweredAircraft from '../assets/media/home/about-section/human-powered-aircraft.png'
 import remoteControlAircraft from '../assets/media/home/about-section/remote-control-aircraft.png'
@@ -16,6 +19,7 @@ import royalAeronauticalSocietyLogo from '../assets/media/sponsor/royal-aeronaut
 export const layoutData = {
   header: {
     brand: {
+      logo: uacLogo,
       label: 'UOA Aeronautics Club',
       path: '/',
     },
@@ -295,7 +299,7 @@ export const pageData = {
   eventsPage: [
     {
       calendarSrc:
-        'https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID&ctz=Pacific/Auckland&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=0&showCalendars=0&showTz=0',
+        'https://calendar.google.com/calendar/embed?src=NThiODZhNGM1Nzg4MDdiZmM2MGY2MWM3NzhhMmJlZWE4NmZhNWY3Y2E1NTExOWZjYmEwNzkzODdlM2EzNDRhYkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4ubmV3X3plYWxhbmQjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23f6bf26&color=%230b8043&ctz=Pacific/Auckland&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=0&showCalendars=0&showTz=0',
     },
     {
       eventDates: [

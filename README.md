@@ -18,20 +18,15 @@ Current site sections include:
 
 ## Tech Stack
 
-- React 19
 - TypeScript
+- React
+- Tailwind CSS
+- Framer Motion
 - Vite
-- React Router
-- Tailwind CSS 4
 - ESLint
 - Prettier
 
 ## Getting Started
-
-### Prerequisites
-
-- Node.js 20+ recommended
-- npm
 
 ### Installation
 
@@ -45,15 +40,11 @@ npm install
 npm run dev
 ```
 
-The app will start in local development mode through Vite.
-
 ### Create a Production Build
 
 ```bash
 npm run build
 ```
-
-Build output is generated in `dist/`.
 
 ### Preview the Production Build
 
@@ -69,12 +60,12 @@ npm run lint
 
 ## Available Scripts
 
-| Command | Description |
-| --- | --- |
-| `npm run dev` | Starts the Vite development server |
-| `npm run build` | Runs TypeScript project build checks and creates the production bundle |
-| `npm run preview` | Serves the production build locally |
-| `npm run lint` | Runs ESLint across the codebase |
+| Command           | Description                                                            |
+| ----------------- | ---------------------------------------------------------------------- |
+| `npm run dev`     | Starts the Vite development server                                     |
+| `npm run build`   | Runs TypeScript project build checks and creates the production bundle |
+| `npm run preview` | Serves the production build locally                                    |
+| `npm run lint`    | Runs ESLint across the codebase                                        |
 
 ## Project Structure
 
@@ -90,23 +81,9 @@ public/               Publicly served static files
 dist/                 Production build output
 ```
 
-## Content Management
-
-Most site content is maintained directly in [`src/data/data.ts`](C:\Users\richa\OneDrive\Documents\GitHub\uoa-aeronautics-club-website\src\data\data.ts). This includes:
-
-- Navigation and footer links
-- Home page cards and merchandise content
-- About page text and committee profiles
-- Project summaries
-- Sponsor listings
-- Event metadata
-- Contact links and membership form URL
-
-Media assets are stored under [`src/assets`](C:\Users\richa\OneDrive\Documents\GitHub\uoa-aeronautics-club-website\src\assets) and are referenced by the data layer or page components.
-
 ## Routing
 
-Application routes are defined in [`src/App.tsx`](C:\Users\richa\OneDrive\Documents\GitHub\uoa-aeronautics-club-website\src\App.tsx):
+Application routes are defined in `src/App.tsx`:
 
 - `/`
 - `/about`
@@ -116,22 +93,31 @@ Application routes are defined in [`src/App.tsx`](C:\Users\richa\OneDrive\Docume
 - `/events/:id`
 - `/contacts`
 
+## Content Management
+
+Most site content is maintained directly in `src/data/data.ts`. This includes:
+
+- Navigation and footer links
+- Home page cards and merchandise content
+- About page text and committee profiles
+- Project summaries
+- Sponsor listings
+- Event metadata
+- Contact links and membership form URL
+
+Media assets are stored under `src/assets` and are referenced by the slug-based lookups in data layer.
+
+For more detail of data.ts [`README.md`](./src/data/README.md)
+
 ## Configuration Notes
 
-This project currently uses hard-coded content and does not require environment variables for local development.
-
-Before production release, review the following placeholders in [`src/data/data.ts`](C:\Users\richa\OneDrive\Documents\GitHub\uoa-aeronautics-club-website\src\data\data.ts):
+Before production release, review the following placeholders in `src/data/data.ts`:
 
 - `AeroCloud` links marked as `PLACEHOLDER`
-- Google Calendar embed source containing `YOUR_CALENDAR_ID`
 
 ## Maintenance Guidelines
 
 - Keep structured content changes inside `src/data/data.ts` where possible.
-- Add new images to the relevant folder under `src/assets`.
-- Reuse shared UI components before introducing page-specific markup duplication.
+- Store new images in the appropriate `src/assets` subfolders.  
+  Use `events` for past event galleries. Use `media` for general page content.
 - Run `npm run lint` and `npm run build` before shipping changes.
-
-## License
-
-This repository does not currently define a license. Add one if the project is intended for broader reuse or distribution.
