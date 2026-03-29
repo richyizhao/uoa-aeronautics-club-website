@@ -11,10 +11,7 @@ export const Header: React.FC = () => {
   return (
     <header className='bg-brand-blue sticky top-0 z-50 py-4 shadow-sm backdrop-blur-md transition-all duration-300'>
       <div className='container mx-auto flex h-8 max-w-7xl items-center justify-between px-6'>
-        <a
-          href='/'
-          className='flex items-center justify-center gap-6 hover:opacity-80 max-xl:flex-col md:justify-start'
-        >
+        <a href='/' className='flex items-center justify-center gap-6 hover:opacity-80'>
           <div className='h-full w-30'>
             <img src={brand.logo} alt='UAC Logo' />
           </div>
