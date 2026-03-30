@@ -1,6 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import { Button } from '../ui/Button'
+import { ScrollToTopLink } from '../ui/ScrollToTopLink'
 import { layoutData } from '../../data/data'
 
 export const Footer: React.FC = () => {
@@ -11,15 +11,15 @@ export const Footer: React.FC = () => {
     <footer className='bg-brand-blue px-6 py-12 text-slate-100'>
       <div className='container mx-auto grid max-w-7xl grid-cols-1 gap-12 px-6 text-center md:grid-cols-[minmax(20rem,1.2fr)_minmax(0,0.8fr)_minmax(0,0.8fr)] md:text-left'>
         <div className='min-w-0 space-y-6'>
-          <a
-            href='/'
+          <ScrollToTopLink
+            to='/'
             className='mb-4 flex items-center justify-center gap-6 hover:opacity-80 max-xl:flex-col md:justify-start'
           >
             <div className='h-full w-30'>
               <img src={brand.logo} alt='UAC Logo' />
             </div>
             <span className='font-sora text-xl font-bold text-white'>{brand.label}</span>
-          </a>
+          </ScrollToTopLink>
           <p className='mx-auto text-sm font-light opacity-80 max-xl:hidden md:mx-0'>
             {footer.description}
           </p>
@@ -59,9 +59,12 @@ export const Footer: React.FC = () => {
                       {link.label}
                     </a>
                   ) : (
-                    <Link to={link.href} className='transition-colors hover:text-yellow-500'>
+                    <ScrollToTopLink
+                      to={link.href}
+                      className='transition-colors hover:text-yellow-500'
+                    >
                       {link.label}
-                    </Link>
+                    </ScrollToTopLink>
                   )}
                 </li>
               ))}

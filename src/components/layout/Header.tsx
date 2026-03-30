@@ -1,7 +1,7 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import { Button } from '../ui/Button'
 import { HamburgerMenu } from '../ui/HamburgerMenu'
+import { ScrollToTopLink } from '../ui/ScrollToTopLink'
 import { layoutData } from '../../data/data'
 
 export const Header: React.FC = () => {
@@ -11,24 +11,24 @@ export const Header: React.FC = () => {
   return (
     <header className='bg-brand-blue sticky top-0 z-50 py-4 shadow-sm backdrop-blur-md transition-all duration-300'>
       <div className='container mx-auto flex h-8 max-w-7xl items-center justify-between px-6'>
-        <a href='/' className='flex items-center justify-center gap-6 hover:opacity-80'>
+        <ScrollToTopLink to='/' className='flex items-center justify-center gap-6 hover:opacity-80'>
           <div className='h-full w-30'>
             <img src={brand.logo} alt='UAC Logo' />
           </div>
           <span className='font-sora text-xl font-bold text-white max-md:hidden'>
             {brand.label}
           </span>
-        </a>
+        </ScrollToTopLink>
 
         <nav className='hidden items-center gap-8 text-sm font-medium text-slate-100 lg:flex'>
           {header.navLinks.map((item) => (
-            <Link
+            <ScrollToTopLink
               key={item.path}
               to={item.path}
               className='transition-colors hover:text-yellow-500'
             >
               {item.label}
-            </Link>
+            </ScrollToTopLink>
           ))}
           {header.cta.href && (
             <Button

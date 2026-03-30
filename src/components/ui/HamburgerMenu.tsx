@@ -1,7 +1,7 @@
 import { useEffect, useId, useRef, useState } from 'react'
-import { Link } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 import { cn } from '../../lib/cn'
+import { ScrollToTopLink } from './ScrollToTopLink'
 
 export type HamburgerMenuItem = {
   label: string
@@ -155,13 +155,13 @@ export const HamburgerMenu = ({ items, className }: HamburgerMenuProps) => {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.15 + index * 0.05, duration: 0.35 }}
                   >
-                    <Link
+                    <ScrollToTopLink
                       to={item.path}
                       onClick={() => setIsOpen(false)}
                       className='font-sora relative block overflow-hidden py-6 font-bold text-white no-underline transition-colors duration-300 hover:text-yellow-500'
                     >
                       {item.label}
-                    </Link>
+                    </ScrollToTopLink>
                   </motion.li>
                 ))}
               </ul>
